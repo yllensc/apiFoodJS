@@ -6,4 +6,5 @@ export const category5 = document.getElementById('cat5');
 export const category6 = document.getElementById('cat6');
 export const cardBox = document.querySelector('.cards-food');
 export const error404 = document.querySelector('.not-found');
+export const modalDetails = document.querySelector('#modalDetails');
 
