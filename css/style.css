@@ -8,7 +8,9 @@ body{
 
 header{
     width: 100%;
+    height: 70px;
     background-color: rgb(231, 192, 132);
+    margin-bottom: 30px;
 }
 
 h3{
@@ -19,21 +21,19 @@ h3{
     width: 80%;
     margin: auto;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    flex-direction: column;
     align-content: center;
     gap:20px;
 }
 
 .not-found{
-    display: flex;
+    display: none;
     align-items: center;
     flex-direction: column;
     justify-content: center;
 }
-
-
 
 #notfound{
     width: 400px;
@@ -77,27 +77,47 @@ h3{
     cursor: pointer;
 }
 
-.search-box{
-    width: 80%;
-    height: 60px;
+.car-box{
+    width: 280px;
+    height: 80px;
     background-color: rgb(189, 129, 81);
     border-radius: 20px;
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    
+}
+
+.select-box{
+    width: 280px;
+    height: 80px;
+    background-color: rgb(189, 129, 81);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-#inputLook{
-    border-radius: 20px;
+#selectorArea{
+    border-color: transparent;
+    color: #504a1a;
 }
 
-#btnLook{
-    background-color: aquamarine;
-    border-radius: 20px;
-    height: 40px;
-    width: 40px;
+  #selectorArea option:checked  {
+    background-color: rgb(109, 110, 23); /* Cambia el color de fondo al seleccionar una opción */
+  }
+  
+#buyImage{
+    width: 100px;
+    height: 100px;
+    border-radius: 30%;
 }
 
+#carTitle{
+    margin-left: 50px;
+}
 .cards-food{
     width: 80%;
     display: grid;
@@ -105,4 +125,47 @@ h3{
     gap: 15px;
     justify-items: center;
     justify-content: center;
+}
+.card{
+    background-color: burlywood !important;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aInit, .aInit:hover, .aInit:active{
+    margin: 10px;
+    background-color: #504a1a;
+    color: aliceblue;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-primary,.btn-primary:active{
+    background-color: black !important;
+    color: bisque !important;
+    border-color: transparent !important;
+}
+
+.modal-header{
+    background-color: rgb(75, 68, 68);
+    color: bisque; 
+}
+
+.modal-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-footer{
+    background-color: rgb(189, 129, 81);
 }

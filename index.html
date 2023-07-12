@@ -15,6 +15,17 @@
         <h1>RestaurantApi</h1>
     </header>
     <main class="main-container">
+        <div class="car-box">
+            <img src="img/buy.avif" id="buyImage" alt="" srcset="">
+            <h4 id="carTitle">Carrito</h4>
+        </div>
+        <div class="select-box">
+            <h5>Filtrar por área</h5>
+            <select name="" id="selectorArea">
+                <option value="">filtra por área</option>
+            </select>
+        </div>
+
         <div class="container-categories">
             <div class="category" id="cat1">
                 <h3>Chicken</h3>
@@ -41,60 +52,11 @@
                 <img class="img-category" src="/img/dessert.avif" alt="Dessert food">
             </div>
         </div>
-        <div class="search-box">
-            <input type="text" placeholder="Enter your ingredient" id="inputLook">
-            <button id="btnLook">Buscar</button>
-        </div>
         <div class="not-found">
             <img src="img/404.jpg" alt="food not found" id="notfound">
             <p>Invalid food</p>
         </div>
         <div class="cards-food">
-            <div class="card" style="width: 18rem;">
-                <!--<img src="..." class="card-img-top" alt="...">-->
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <!--<img src="..." class="card-img-top" alt="...">-->
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <!--<img src="..." class="card-img-top" alt="...">-->
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <!--<img src="..." class="card-img-top" alt="...">-->
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <!--<img src="..." class="card-img-top" alt="...">-->
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
         </div>
         <div class="modal-carrito">
             <div class="modal" tabindex="-1">
@@ -117,8 +79,20 @@
             </div>
         </div>
 
-        <div class="modal fade" id="modalDetails" tabindex="-1" aria-labelledby="details" aria-hidden="true">
-            
+        <div class="modal" tabindex="-1" id="modalDetailFood">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Detalles del plato</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="modalDetails">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary addCar">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
